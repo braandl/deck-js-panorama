@@ -1,0 +1,25 @@
+.movable {
+	position:fixed;
+	width: 200%;
+	height:100%;
+}
+
+.bg::after {
+ content: "";
+  background: url(panorama.jpg);
+  /* If you use a x-repeatable Background-Graphic,
+	 you can fit it to the height of the slides*/
+  background-repeat:repeat-x;
+  background-size:auto 100%;
+  /* Else, you need to fit the width to not get white borders:
+  background-repeat:no-repeat;
+  background-size:100%;
+  */
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
